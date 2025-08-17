@@ -1,4 +1,20 @@
-@charset "UTF-8";
+/* --- Meraki: Mobile navbar height tweak --- */
+@media (max-width: 767px) {
+  /* Increase navbar height slightly on small screens */
+  .navbar-custom {
+    min-height: 60px;
+  }
+  .navbar-custom .navbar-brand {
+    height: 60px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+  .navbar-custom .navbar-toggle {
+    margin-top: 13px;
+    margin-bottom: 13px;
+  }
+}
+/* @charset "UTF-8"; */
 /*!
     Concept - Smart multi-purpose html5 template
     To use this template you must have a license purchased at Themeforest (themeforest.com)
