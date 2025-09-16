@@ -13,6 +13,26 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS-->
     <link href="css/main.css" rel="stylesheet">
+    <style>
+      /* Contact page scoped enhancements */
+      .contact-section{padding:80px 0;background:linear-gradient(180deg, #fafafa 0%, #ffffff 100%)}
+      .contact-box{background:#fff;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.06);padding:28px 28px}
+      .contact-box h3{font-weight:700;margin:0 0 18px}
+      .contact-info{font-size:16px;margin:8px 0}
+      .contact-info i{margin-right:10px;color:#111}
+      .contact-meta{margin-top:16px}
+      .contact-meta h5{margin:12px 0 6px;font-weight:600}
+      .social-list{margin:8px 0 0;padding:0;list-style:none}
+      .social-list li{display:inline-block;margin-right:10px}
+      .social-list a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:#111;color:#fff}
+      .social-list a:hover{opacity:.9}
+      .form-control{height:50px;border-radius:10px;box-shadow:none;border:1px solid #e7e7e7}
+      textarea.form-control{height:auto;min-height:120px;border-radius:12px}
+  .btn.btn-block{border-radius:12px;padding:12px 18px;font-weight:700}
+      @media (max-width: 991px){
+        .contact-box{margin-bottom:24px}
+      }
+    </style>
     
   </head>
   <body class="top" id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -73,31 +93,42 @@
 <!-- Contact Section -->
 <section class="contact-section">
   <div class="container">
-    <div class="row justify-content-center">
+    <div class="row">
       <!-- Contact Info -->
-      <div class="col-lg-5 mb-4">
+  <div class="col-md-6 col-lg-5 col-lg-offset-1">
         <div class="contact-box">
           <h3>Get in Touch</h3>
           <p class="contact-info"><i class="fa fa-phone"></i> +91 98765 43210</p>
           <p class="contact-info"><i class="fa fa-envelope"></i> info@merakiphotography.com</p>
-          <div id="map" style="height:250px; border-radius:10px; overflow:hidden;"></div>
+          <p class="contact-info"><i class="fa fa-map-marker"></i> Alappuzha, Kerala, India</p>
+          <div class="contact-meta">
+            <h5>Business Hours</h5>
+            <p class="no-pad">Mon - Sat: 9:00 AM — 7:00 PM<br>Sun: Closed</p>
+            <h5>Follow Us</h5>
+            <ul class="social-list">
+              <li><a href="#" aria-label="Facebook"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#" aria-label="Instagram"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#" aria-label="YouTube"><i class="fa fa-youtube"></i></a></li>
+              <li><a href="#" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
         </div>
       </div>
       <!-- Contact Form -->
-      <div class="col-lg-5">
+      <div class="col-md-6 col-lg-5">
         <div class="contact-box">
           <h3>Send a Message</h3>
           <form id="contactForm" novalidate>
-            <div class="mb-3">
+            <div class="form-group">
               <input type="text" class="form-control" id="name" placeholder="Your Name" required>
             </div>
-            <div class="mb-3">
+            <div class="form-group">
               <input type="email" class="form-control" id="email" placeholder="Your Email" required>
             </div>
-            <div class="mb-3">
+            <div class="form-group">
               <textarea class="form-control" id="message" rows="3" placeholder="Your Message" required></textarea>
             </div>
-            <button class="btn btn-dark w-100" type="submit">Send Message</button>
+            <button class="btn btn-dark btn-block" type="submit">Send Message</button>
           </form>
         </div>
       </div>
@@ -127,17 +158,19 @@
     </div>
   </div>
 
+</section>
+
 <!-- footer-->
 <section class="section-small bg-gray footer">
   <div class="container">
     <div class="row">
       <div class="col-lg-3">
         <ul class="list-inline no-pad">
-          <li><a href="#"><i class="fab fa-twitter fa-fw fa-lg"></i></a></li>
-          <li><a href="#"><i class="fab fa-facebook-f fa-fw fa-lg"></i></a></li>
-          <li><a href="#"><i class="fab fa-youtube fa-fw fa-lg"></i></a></li>
-          <li><a href="#"><i class="fab fa-instagram fa-fw fa-lg"></i></a></li>
-          <li><a href="#"><i class="fab fa-linkedin-in fa-fw fa-lg"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter fa-fw fa-lg"></i></a></li>
+          <li><a href="#"><i class="fa fa-facebook fa-fw fa-lg"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube fa-fw fa-lg"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram fa-fw fa-lg"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin fa-fw fa-lg"></i></a></li>
         </ul>
       </div>
       <div class="col-lg-4 col-lg-offset-1">
@@ -166,9 +199,7 @@
     <script src="js/jquery.swipebox.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/jquery.smartmenus.js"></script>
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsh1qTKHU0HysXREMrcPMtcuRBmBE7pbc"></script>
-    <script src="js/map.js"></script>
+  <!-- Maps removed for cleaner layout and to avoid API errors -->
     <!-- Custom Theme JavaScript-->
     <script src="js/main.js"></script>
 
